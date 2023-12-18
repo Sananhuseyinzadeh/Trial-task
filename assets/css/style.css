@@ -1,0 +1,848 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  background-image: url("../css/photos/Bayil.png");
+  background-size: 100% 100%;
+  background-position: center; /* Optional: Center the background image */
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+}
+#header .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 140px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust the last value (0.5) for opacity */
+}
+
+.header-all {
+  position: relative;
+}
+.header-all .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+}
+.header-all .header-top .header-top-left a {
+  padding-left: 20px;
+  position: relative;
+}
+.header-all .header-top .header-top-left a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  bottom: -5px;
+  left: 15px;
+  background-color: #fff;
+}
+.header-all .header-top .header-top-left a:hover::after {
+  width: 90%;
+  transition: 0.5s;
+}
+.header-all .header-top a {
+  color: #fff;
+}
+.header-all .header-top button {
+  background: none;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 25px;
+}
+.header-all .header-top .logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.header-all .header-top .header-top-right a {
+  padding-right: 20px;
+  position: relative;
+}
+.header-all .header-top .header-top-right a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  bottom: -5px;
+  left: 0px;
+  background-color: #fff;
+}
+.header-all .header-top .header-top-right a:hover::after {
+  width: 80%;
+  transition: 0.5s;
+}
+.header-all .header-top .language-menu {
+  position: relative;
+}
+.header-all .header-top .language-menu:hover i {
+  transform: rotate(180deg);
+  transition: 0.2s;
+}
+.header-all .header-top .language-menu:hover ul {
+  display: block;
+}
+.header-all .header-top .language-menu .selected-language button {
+  background-color: #58616B;
+  margin-right: 20px;
+  padding: 8px 10px;
+}
+.header-all .header-top .language-menu .selected-language button:hover {
+  cursor: pointer;
+}
+.header-all .header-top .language-menu ul {
+  margin: 0;
+  padding: 0;
+  width: 70%;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #f8f8f8;
+  box-shadow: 0px 1px 10px rgb(0, 0, 0);
+  display: none;
+  position: absolute;
+  top: 43px;
+  left: 0;
+}
+.header-all .header-top .language-menu ul li {
+  list-style: none;
+}
+.header-all .header-top .language-menu ul li a {
+  color: #000;
+  width: 100px;
+  display: block;
+  padding: 3px 5px;
+}
+.header-all .header-top .language-menu ul li a:hover {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+.header-all .header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 450px;
+  padding-left: 100px;
+}
+.header-all .header-bottom .header-bottom-left a {
+  color: #fff;
+  padding-left: 100px;
+}
+.header-all .header-bottom .header-bottom-middle a {
+  color: #fff;
+  padding-left: 200px;
+}
+.header-all .header-bottom .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 250px;
+}
+.header-all .header-bottom .social span {
+  color: #fff;
+}
+.header-all .header-bottom .social a {
+  color: #fff;
+  padding-left: 10px;
+}
+
+main {
+  background-color: #F6F7F9;
+  border-radius: 25px;
+}
+main .whatsapp-icon {
+  border-radius: 100%;
+  position: fixed;
+  top: 550px;
+  right: 30px;
+}
+main .whatsapp-icon button {
+  border: none;
+  border-radius: 100%;
+  padding: 10px;
+  color: #3D7E2A;
+  background-color: #3D7E2A;
+}
+main .whatsapp-icon button a {
+  background-color: #3D7E2A;
+}
+main .whatsapp-icon button a img {
+  background-color: #3D7E2A;
+}
+main #haqqımızda .about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #haqqımızda .about .about-left {
+  width: 38%;
+  padding-left: 111px;
+  margin-top: 111px;
+}
+main #haqqımızda .about .about-right .about-all-boxs {
+  padding-right: 50px;
+  height: 160px;
+  transition: 0.3s;
+}
+main #haqqımızda .about .about-right .about-all-boxs .box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1px 20px;
+}
+main #haqqımızda .about .about-right .about-all-boxs .box a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+}
+main #haqqımızda .about .about-right .about-all-boxs .box a img {
+  width: 20%;
+}
+main #haqqımızda .about .about-right .about-all-boxs .box a p {
+  margin-top: 20px;
+}
+main #haqqımızda .about .about-right .about-all-boxs .about-boxs-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #haqqımızda .about .about-right .about-all-boxs .about-boxs-first .box {
+  width: 47%;
+}
+main #haqqımızda .about .about-right .about-all-boxs .about-boxs-first :hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+main #haqqımızda .about .about-right .about-all-boxs .about-boxs-second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+main #haqqımızda .about .about-right .about-all-boxs .about-boxs-second .box {
+  width: 47%;
+}
+main #haqqımızda .about .about-right .about-all-boxs .about-boxs-second .box a p {
+  padding-right: 25px;
+}
+main #haqqımızda .about .about-right .about-all-boxs .about-boxs-second :hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+main #haqqımızda .about .about-right .about-all-boxs .about-boxs-third {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+main #haqqımızda .about .about-right .about-all-boxs .about-boxs-third .box {
+  width: 47%;
+}
+main #haqqımızda .about .about-right .about-all-boxs .about-boxs-third .box a p {
+  padding-left: 15px;
+}
+main #haqqımızda .about .about-right .about-all-boxs .about-boxs-third :hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+main #apartments {
+  height: 650px;
+  /* Add other styles for your apartment boxes as needed */
+}
+main #apartments .apartments-name h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-top: 70px;
+}
+main #apartments .apartment-all-boxs {
+  padding-left: 20px;
+  margin-top: 50px;
+}
+main #apartments .apartment-all-boxs .overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+}
+main #apartments .apartment-all-boxs .overlay-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+}
+main #apartments .apartment-all-boxs .apartment-box-first {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  background-color: #fff;
+  width: 20%;
+  height: 350px;
+  padding-left: 20px;
+  border-radius: 20px;
+  /* Add other styles for your apartment boxes as needed */
+}
+main #apartments .apartment-all-boxs .apartment-box-first .apartment-box-first-image img {
+  position: absolute;
+  top: 15%;
+  left: 30px;
+}
+main #apartments .apartment-all-boxs .apartment-box-first .apartment-box-first-middle span {
+  position: absolute;
+  bottom: 85px;
+  padding-left: 50px;
+}
+main #apartments .apartment-all-boxs .apartment-box-first .apartment-box-first-middle span hr {
+  color: gray;
+  padding-left: 110px;
+  padding-right: 110px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+main #apartments .apartment-all-boxs .apartment-box-first .apartment-box-first-bottom .apartment-box-first-bottom-first img {
+  padding-left: 30px;
+  margin-top: 290px;
+}
+main #apartments .apartment-all-boxs .apartment-box-first .apartment-box-first-bottom .apartment-box-first-bottom-second span {
+  padding-left: 23px;
+}
+main #apartments .apartment-all-boxs .apartment-box-first:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+main #apartments .apartment-all-boxs .apartment-box-second {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 192%;
+  left: 25%;
+  background-color: #fff;
+  width: 20%;
+  height: 350px;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+main #apartments .apartment-all-boxs .apartment-box-second .apartment-box-second-image img {
+  position: absolute;
+  top: 15%;
+  left: 30px;
+}
+main #apartments .apartment-all-boxs .apartment-box-second .apartment-box-second-middle span {
+  position: absolute;
+  bottom: 85px;
+  padding-left: 50px;
+}
+main #apartments .apartment-all-boxs .apartment-box-second .apartment-box-second-middle span hr {
+  color: gray;
+  padding-left: 110px;
+  padding-right: 110px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+main #apartments .apartment-all-boxs .apartment-box-second .apartment-box-second-bottom .apartment-box-second-bottom-first img {
+  padding-left: 30px;
+  margin-top: 290px;
+}
+main #apartments .apartment-all-boxs .apartment-box-second .apartment-box-second-bottom .apartment-box-second-bottom-second span {
+  padding-left: 23px;
+}
+main #apartments .apartment-all-boxs .apartment-box-second:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+main #apartments .apartment-all-boxs .apartment-box-third {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 192%;
+  left: 50%;
+  background-color: #fff;
+  width: 20%;
+  height: 350px;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+main #apartments .apartment-all-boxs .apartment-box-third .apartment-box-third-image img {
+  position: absolute;
+  top: 15%;
+  left: 30px;
+}
+main #apartments .apartment-all-boxs .apartment-box-third .apartment-box-third-middle span {
+  position: absolute;
+  bottom: 85px;
+  padding-left: 50px;
+}
+main #apartments .apartment-all-boxs .apartment-box-third .apartment-box-third-middle span hr {
+  color: gray;
+  padding-left: 110px;
+  padding-right: 110px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+main #apartments .apartment-all-boxs .apartment-box-third .apartment-box-third-bottom .apartment-box-third-bottom-first img {
+  padding-left: 30px;
+  margin-top: 290px;
+}
+main #apartments .apartment-all-boxs .apartment-box-third .apartment-box-third-bottom .apartment-box-third-bottom-second span {
+  padding-left: 23px;
+}
+main #apartments .apartment-all-boxs .apartment-box-third:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+main #apartments .apartment-all-boxs .apartment-box-fourth {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 192%;
+  left: 75%;
+  background-color: #fff;
+  width: 20%;
+  height: 350px;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+main #apartments .apartment-all-boxs .apartment-box-fourth .apartment-box-fourth-image img {
+  position: absolute;
+  top: 10%;
+  left: 30px;
+}
+main #apartments .apartment-all-boxs .apartment-box-fourth .apartment-box-fourth-middle span {
+  position: absolute;
+  bottom: 85px;
+  padding-left: 50px;
+}
+main #apartments .apartment-all-boxs .apartment-box-fourth .apartment-box-fourth-middle span hr {
+  color: gray;
+  padding-left: 110px;
+  padding-right: 110px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+main #apartments .apartment-all-boxs .apartment-box-fourth .apartment-box-fourth-bottom .apartment-box-fourth-bottom-first img {
+  padding-left: 30px;
+  margin-top: 290px;
+}
+main #apartments .apartment-all-boxs .apartment-box-fourth .apartment-box-fourth-bottom .apartment-box-fourth-bottom-second span {
+  padding-left: 23px;
+}
+main #apartments .apartment-all-boxs .apartment-box-fourth:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-five {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 250%;
+  left: 1.5%;
+  background-color: #fff;
+  width: 20%;
+  height: 350px;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-five .apartment-box-five-image img {
+  position: absolute;
+  top: 10%;
+  left: 30px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-five .apartment-box-five-middle span {
+  position: absolute;
+  bottom: 85px;
+  padding-left: 50px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-five .apartment-box-five-middle span hr {
+  color: gray;
+  padding-left: 110px;
+  padding-right: 110px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-five .apartment-box-five-bottom .apartment-box-five-bottom-first img {
+  padding-left: 30px;
+  margin-top: 290px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-five .apartment-box-five-bottom .apartment-box-five-bottom-second span {
+  padding-left: 23px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-five:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-six {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 250%;
+  left: 25%;
+  background-color: #fff;
+  width: 20%;
+  height: 350px;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-six .apartment-box-six-image img {
+  position: absolute;
+  top: 10%;
+  left: 30px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-six .apartment-box-six-middle span {
+  position: absolute;
+  bottom: 85px;
+  padding-left: 50px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-six .apartment-box-six-middle span hr {
+  color: gray;
+  padding-left: 110px;
+  padding-right: 110px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-six .apartment-box-six-bottom .apartment-box-six-bottom-first img {
+  padding-left: 30px;
+  margin-top: 290px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-six .apartment-box-six-bottom .apartment-box-six-bottom-second span {
+  padding-left: 23px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-six:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-seven {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 250%;
+  left: 50%;
+  background-color: #fff;
+  width: 20%;
+  height: 350px;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-seven .apartment-box-seven-image img {
+  position: absolute;
+  top: 10%;
+  left: 30px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-seven .apartment-box-seven-middle span {
+  position: absolute;
+  bottom: 85px;
+  padding-left: 50px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-seven .apartment-box-seven-middle span hr {
+  color: gray;
+  padding-left: 110px;
+  padding-right: 110px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-seven .apartment-box-seven-bottom .apartment-box-seven-bottom-first img {
+  padding-left: 30px;
+  margin-top: 290px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-seven .apartment-box-seven-bottom .apartment-box-seven-bottom-second span {
+  padding-left: 23px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-seven:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-eight {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 250%;
+  left: 75%;
+  background-color: #fff;
+  width: 20%;
+  height: 350px;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-eight .apartment-box-eight-image img {
+  position: absolute;
+  top: 10%;
+  left: 30px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-eight .apartment-box-eight-middle span {
+  position: absolute;
+  bottom: 85px;
+  padding-left: 50px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-eight .apartment-box-eight-middle span hr {
+  color: gray;
+  padding-left: 110px;
+  padding-right: 110px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-eight .apartment-box-eight-bottom .apartment-box-eight-bottom-first img {
+  padding-left: 30px;
+  margin-top: 290px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-eight .apartment-box-eight-bottom .apartment-box-eight-bottom-second span {
+  padding-left: 23px;
+}
+main #apartments .apartment-all-boxs .apartment-boxs-part-two .apartment-box-eight:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+main #xidmetler {
+  margin-top: 20%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+main #xidmetler .services-name h2 {
+  padding-left: 600px;
+  font-size: 40px;
+  font-weight: bold;
+}
+main #xidmetler .services-first-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+main #xidmetler .services-first-box .services-first-box-left img {
+  width: 70%;
+  padding-left: 60px;
+}
+main #xidmetler .services-first-box .services-first-box-right {
+  padding-right: 190px;
+}
+main #xidmetler .services-first-box .services-first-box-right h3 {
+  font-weight: bold;
+}
+main #xidmetler .services-second-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+main #xidmetler .services-second-box .services-second-box-left {
+  padding-left: 60px;
+}
+main #xidmetler .services-second-box .services-second-box-left h3 {
+  font-weight: bold;
+}
+main #xidmetler .services-second-box .services-second-box-right img {
+  width: 80%;
+  padding-left: 220px;
+}
+main #xidmetler .services-third-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+main #xidmetler .services-third-box .services-third-box-left img {
+  width: 70%;
+  padding-left: 60px;
+}
+main #xidmetler .services-third-box .services-third-box-right {
+  padding-right: 190px;
+}
+main #xidmetler .services-third-box .services-third-box-right h3 {
+  font-weight: bold;
+}
+main #xidmetler .services-fourth-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+main #xidmetler .services-fourth-box .services-fourth-box-left {
+  padding-left: 60px;
+}
+main #xidmetler .services-fourth-box .services-fourth-box-left h3 {
+  font-weight: bold;
+}
+main #xidmetler .services-fourth-box .services-fourth-box-right img {
+  width: 80%;
+  padding-left: 220px;
+}
+main #qalareya .gallery {
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background-color: #fff;
+}
+main #qalareya .gallery .slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+main #qalareya .gallery .slider .slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+main #qalareya .gallery .slider .slide img {
+  padding-left: 550px;
+  margin-top: 100px;
+}
+main #qalareya .gallery .slider .slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+main #qalareya .gallery .prev, main #qalareya .gallery .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main #qalareya .gallery .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+main #qalareya .gallery .prev:hover, main #qalareya .gallery .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+main #elaqe {
+  background-color: #fff;
+}
+main #elaqe .map .main-map {
+  position: relative;
+}
+main #elaqe .map .main-map img {
+  margin-top: 50px;
+  width: 100%;
+}
+main #elaqe .map .second-map {
+  position: absolute;
+  top: 712%;
+  right: 295px;
+}
+main #elaqe .map .second-map img {
+  width: 65%;
+}
+main #elaqe .map .board {
+  background-color: #fff;
+  border-radius: 15px;
+  height: 360px;
+  width: 30%;
+  position: absolute;
+  top: 712%;
+  left: 150px;
+}
+main #elaqe .map .board span {
+  color: gray;
+  padding-left: 40px;
+}
+main #elaqe .map .board p {
+  font-weight: bold;
+  padding-left: 40px;
+}
+main #elaqe .map .board .board-top h3 {
+  font-weight: bold;
+  padding-left: 40px;
+  margin-top: 30px;
+}
+main #elaqe .map .board .board-bottom-icons {
+  padding-left: 32px;
+}
+main #elaqe .map .board .board-bottom-icons a {
+  color: #000;
+}
+main #elaqe .map .board .board-bottom-icons a i {
+  padding-left: 8px;
+}
+
+footer {
+  border-radius: 20px;
+  background-color: #fff;
+}
+footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 228px;
+  padding-right: 228px;
+  margin-top: 20px;
+}
+footer .footer-top .footer-navigation a {
+  color: #000;
+  padding-left: 40px;
+}
+footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 450px;
+  padding-right: 450px;
+}
+footer .footer-bottom span {
+  color: gray;
+}
+footer .footer-bottom .footer-bottom-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-bottom .footer-bottom-middle .footer-bottom-middle-right span {
+  font-style: italic;
+  padding-left: 10px;
+}
+footer .footer-bottom .footer-bottom-right {
+  text-decoration: underline;
+}
+footer .footer-bottom .footer-bottom-right a {
+  color: #000;
+}
+
+@media only screen and (max-width: 576px) {
+  .about .about-left h1 {
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
